@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #eaeaea; /* Cinza muito claro para um fundo neutro e fresco */
+    color: #333; /* Texto principal em cinza escuro */
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #003366; /* Azul marinho para um contraste sofisticado */
+    color: #ffffff; /* Texto branco para contraste */
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #ff6600; /* Título em laranja vibrante */
+}
+
+section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Fundo branco para as seções */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    flex: 1;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #003366; /* Subtítulo em azul marinho */
+    margin-bottom: 15px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #ff6600; /* Barra laranja abaixo do subtítulo */
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+
+input[type='text'] {
+    padding: 12px 15px;
+    width: 100%;
+    border: 1px solid #bdc3c7; /* Bordas em cinza claro */
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: #ffffff; /* Fundo branco na barra de pesquisa */
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+input[type='text']:focus {
+    border-color: #003366; /* Borda azul marinho no foco */
+    outline: none;
+}
+
+button {
+    background-color: #ff6600; /* Laranja vibrante no botão */
+    color: #ffffff; /* Texto branco */
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #e65c00; /* Botão laranja mais escuro no hover */
+    transform: translateY(-2px);
+}
+
+footer {
+    background-color: #003366; /* Azul marinho */
+    color: #ffffff; /* Texto branco */
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #ff6600; /* Texto do footer em laranja vibrante */
+}
