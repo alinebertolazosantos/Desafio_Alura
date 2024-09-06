@@ -1,26 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
 body {
     background-color: #eaeaea; /* Cinza muito claro para um fundo neutro e fresco */
     color: #333; /* Texto principal em cinza escuro */
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header {
     background-color: #003366; /* Azul marinho para um contraste sofisticado */
     color: #ffffff; /* Texto branco para contraste */
     text-align: center;
-    padding: 20px 0;
+    padding: 30px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -35,6 +32,8 @@ h1 {
 
 section {
     max-width: 900px;
+    display: flex;
+    flex-direction: column;
     margin: 30px auto;
     padding: 20px;
     background-color: #ffffff; /* Fundo branco para as seções */
@@ -49,6 +48,17 @@ h2 {
     color: #003366; /* Subtítulo em azul marinho */
     margin-bottom: 15px;
     position: relative;
+}
+
+section input {
+    width: 30rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    color: #45474b;
+    font-size: 1rem;
+    box-sizing: border-box;
 }
 
 h2::after {
@@ -98,20 +108,45 @@ button:hover {
     transform: translateY(-2px);
 }
 
+.resultado-pesquisa {
+    width: 60rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+}
+
+.item-resultado {
+    background: #ffffff;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #d3d3d3; /* Linha cinza entre os itens */
+}
+
+/* Remove a linha do último item */
+.item-resultado:last-child {
+    border-bottom: none;
+}
+
 footer {
-    background-color: #003366; /* Azul marinho */
+    background: linear-gradient(135deg, #003366, #00509e); /* Gradiente azul */
     color: #ffffff; /* Texto branco */
     text-align: center;
-    padding: 15px;
+    padding: 30px 20px; /* Mais espaçamento */
     font-size: 14px;
     position: relative;
     bottom: 0;
-    width: 100%;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    width: 97.5%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 footer p {
     margin: 0;
-    font-size: 14px;
-    color: #ff6600; /* Texto do footer em laranja vibrante */
+    font-size: 16px; /* Texto um pouco maior */
+    color: #ff6600; /* Texto laranja vibrante */
 }
